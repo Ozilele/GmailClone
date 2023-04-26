@@ -1,8 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import mailReducer from '../features/mailSlice.js';
+import userReducer from '../features/userSlice.js';
+import sidebarReducer from '../features/sidebarSlice.js';
+import appReducer from '../features/appMode.js';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    mail: mailReducer,
+    user: userReducer,
+    sidebar: sidebarReducer,
+    app: appReducer,
   },
 });

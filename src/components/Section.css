@@ -1,0 +1,26 @@
+
+.email__section__item {
+    display: flex;
+    cursor: pointer;
+    gap: 20px;
+    height: 60px;
+    width: 230px;
+    min-width: 130px;
+    padding: 10px;
+    align-items: center;
+    color: lightgray !important;
+    border-bottom-width: 2px;
+    border-width: 0 !important;
+}
+
+.email__section__item:hover {
+    background-color: #454545;
+    border-width: 3px !important;
+    color: #ECECEC !important;
+}
+
+.email__section__item__selected {
+    color: #ECECEC !important;
+    border-width: 3px !important;
+}
+

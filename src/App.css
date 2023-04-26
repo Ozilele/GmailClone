@@ -1,39 +1,225 @@
-.App {
-  text-align: center;
+
+.app {
+    width: 100vw;
+    position: relative;
+    /* display: flex;
+    flex-direction: column; */
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#dark {
+    background-color: #111111;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+#light {
+    background-color: #F6F8FC;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#light > header > .app__header__first > .menu__burger > span {
+    background-color: #5F6368;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+#light > header > .app__header__first > .menu__burger:hover {
+    background-color: #E8EAED;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+#light > header > .app__header__first > .menu__burger:hover > span {
+    background-color: #5F6368;
 }
+
+#light > header > .app__header__first > h3 {
+    color: #181823;
+}
+
+#light > header > .header__search {
+    background-color: #eaf1fb;
+}
+
+#light > header > .header__search > .search__icon {
+    color: #444746 !important;
+}
+
+#light > header > .header__search > .search__input {
+    color: rgb(71, 71, 71, 1);
+}
+
+#light > header > .header__search > button > .option__icon {
+    color:#181823;
+}
+
+#light > header > .header__search > button:hover {
+    background-color: rgb(221, 227, 236);
+}
+
+#light > header > .header__search > .search__input::placeholder {
+    color:#181823;
+}
+
+#light > header > .header__search:has(.search__input:focus) {
+    /* border: 1px solid black; */
+    -webkit-box-shadow: 2px 5px 12px 0px rgba(128, 125, 125, 1);
+    -moz-box-shadow: 2px 5px 12px 0px rgba(128, 125, 125, 1);
+    box-shadow: 2px 5px 12px 0px rgba(128, 125, 125, 1);
+    background-color: inherit;
+}
+
+#light > header > .header__icons > svg {
+    color: rgb(95, 99, 104, 1);
+}
+
+#light > header > .header__icons > svg:hover {
+    color: rgb(95, 99, 104, 0.6);
+}
+
+
+.app__body {
+    position: relative; 
+    display: flex;
+}
+
+#light > .sidebar > .compose__sidebar__btn, #light > .sidebar__rolled > .compose__sidebar__btn  {
+    background-color: #C2E7FF;
+}
+
+#light > .sidebar > .toggle__theme__section > label {
+    color: black;
+}
+
+#light > .sidebar > .compose__sidebar__btn:hover, #light > .sidebar__rolled > .compose__sidebar__btn:hover {
+    box-shadow: 0 1px 3px 0 rgb(60 64 67 / 30%), 0 4px 8px 3px rgb(60 64 67 / 15%);
+}
+
+#light > .sidebar > .compose__sidebar__btn > span {
+    color:#181823;
+}
+
+#light > .sidebar > .sidebar__options > .sidebar__option, 
+#light > .sidebar > .sidebar__options > a > .sidebar__option,
+#light > .sidebar > .sidebar__options > .active__icons > .sidebar__option,
+#light > .sidebar__rolled > .sidebar__options > .sidebar__option__rolled,
+#light > .sidebar__rolled > .sidebar__options > a > .sidebar__option__rolled,
+#light > .sidebar__rolled > .sidebar__options > .active__icons > .sidebar__option__rolled {
+    color: #35363A !important;
+}
+
+#light > .sidebar > .sidebar__options > .sidebar__option:hover, 
+#light > .sidebar > .sidebar__options > a > .sidebar__option:hover,
+#light > .sidebar > .sidebar__options > .active__icons > .sidebar__option:hover,
+#light > .sidebar__rolled > .sidebar__options > .sidebar__option__rolled:hover,
+#light > .sidebar__rolled > .sidebar__options > a > .sidebar__option__rolled:hover,
+#light > .sidebar__rolled > .sidebar__options > .active__icons > .sidebar__option__rolled:hover {
+    background-color: rgb(234, 235, 239);
+    color:#181823;
+}
+
+#light > .sidebar > .sidebar__options > .sidebar__option--active,
+#light > .sidebar__rolled > .sidebar__options > .sidebar__option--active,
+#light > .sidebar > .sidebar__options > .sidebar__option--active > p,
+#light > .sidebar > .sidebar__options > .sidebar__option--active > h3 {
+    background-color: rgb(211, 227, 253);
+    color:#111111;
+}
+
+#light > .main__section {
+    background-color: rgb(255, 255, 255);
+    color: #202124;
+    border-left: 0;
+    -webkit-box-shadow: -7px 5px 17px -2px rgba(128, 125, 125, 0.57);
+    -moz-box-shadow: -7px 5px 17px -2px rgba(128, 125, 125, 0.57);
+    box-shadow: -7px 5px 17px -2px rgba(128, 125, 125, 0.57);
+}
+
+#light > .main__section > .email__settings {
+    background-color: inherit;
+}
+
+#light > .main__section > .email__settings > .email__list__settings > svg, 
+#light > .main__section > .email__settings > .email__list__pagination > svg {
+    color: #444 !important;
+}
+
+#light > .main__section > .email__settings > .email__list__settings > button,
+#light > .main__section > .email__settings > .email__list__pagination > button {
+    color: #444 !important;
+}
+
+#light > .main__section > .email__settings > .email__list__settings > button:hover,
+#light > .main__section > .email__settings > .email__list__pagination > button:hover {
+    background-color: rgb(242, 242, 242) !important;
+}
+
+#light > .main__section > .email__settings > .email__list__pagination > h3 {
+    color:#181823;
+}
+
+#light > .main__section > .emails__section {
+    background-color: inherit;
+}
+
+#light > .main__section > .emails__section > .email__section__item {
+    color: rgb(80, 83, 82) !important;
+}
+
+#light > .main__section > .emails__section > .email__section__item:hover {
+    background-color: #F4F4F4;
+} 
+
+#light > .main__section > .emails__rows {
+    background-color: #F2F6FC;
+}
+
+#light > .main__section > .emails__rows > a > .mail__row {
+    color:#202124;
+    font-family: "Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+
+#light > .main__section > .emails__rows > a > .mail__row:hover {
+    box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0, 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+}
+
+#light > .main__section > .emails__rows > a > .mail__row > .mail__row__icons {
+    color: #BDCDD6 !important;
+}
+
+#light > .main__section > .emails__rows > a > .mail__row > .mail__row__icons > button {
+    color: #BDCDD6 !important;
+}
+
+#light > .main__section > .emails__rows > a > .mail__row > .mail__row__icons > button:hover {
+    background-color: #E6EAEF !important;
+}
+
+#light > .main__section > .emails__rows > a > .mail__row > .mail__row__icons > button:hover > svg {
+    color: #111111 !important;
+}
+
+#light > .main__section > .emails__rows > a > .mail__row > .mail__row__icons > .checkbox__icon:hover {
+    color: #111111 !important;
+}
+
+#light > .main__section > .emails__rows > a > .mail__row > .mail__row__sender {
+    font-weight: 400;
+}
+
+#light > .main__section > .emails__rows > a > .mail__row > .mail__row__msg > h4 {
+    color: inherit;
+    font-weight: 400;
+}
+
+#light > .main__section > .emails__rows > a > .mail__row > .mail__row__msg > h4 > .mail__row__description {
+    color: #6B728E;
+    font-weight: 400;
+}
+
+#light > .main__section > .emails__rows > a > .mail__row > .mail__row__time {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 11px;
+}
+
+#light > .mail__screen {
+    -webkit-box-shadow: -7px 5px 17px -2px rgba(128, 125, 125, 0.57);
+    -moz-box-shadow: -7px 5px 17px -2px rgba(128, 125, 125, 0.57);
+    box-shadow: -7px 5px 17px -2px rgba(128, 125, 125, 0.57);
+}
+
+/* .sidebar__option--active */

@@ -1,0 +1,30 @@
+
+.login {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.login__container {
+    background-color: transparent;
+    height: 400px;
+    width: 350px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 1px 5px 26px -1px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 1px 5px 26px -1px rgba(66, 68, 90, 1);
+    box-shadow: 1px 5px 26px -1px rgba(66, 68, 90, 1);
+    background-color: #ECF2FF;
+}
+
+.login__container > img {
+    object-fit: contain;
+    height: 220px;
+    width: 300px;
+}
+
+.login__container > button {
+    width: 80%;
+}

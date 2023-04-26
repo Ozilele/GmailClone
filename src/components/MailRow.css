@@ -1,0 +1,93 @@
+a {
+    text-decoration: none;
+}
+.mail__row {
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 45px;
+    padding: 10px;
+    border-bottom: 1px solid transparent;
+    z-index: 999;
+    color: whitesmoke;
+}
+
+.mail__row:hover {
+    border-top: 1px solid transparent;
+    box-shadow: inset 1px 0 0 rgb(255 255 255 / 20%), inset -1px 0 0 rgb(255 255 255 / 20%), 0 0 4px 0 rgb(95 99 104 / 60%), 0 0 6px 2px rgb(95 99 104 / 60%);
+} 
+
+.mail__row__icons {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: rgb(65, 65, 65) !important;
+}
+
+.checkbox__icon {
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.checkbox__icon:hover {
+    color: whitesmoke !important;
+}
+
+.mail__row__icons > button {
+    color: rgb(65, 65, 65) !important;
+    width: 21px !important;
+    height: 21px !important;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.mail__row__icons > button:hover {
+    background-color: #454545 !important;
+}
+
+.mail__row__icons > button:hover > svg {
+    color: whitesmoke !important;
+}
+
+.mail__row__sender {
+    margin-left: 10px;
+    min-width: 150px;
+    font-size: 14px;
+}
+
+.mail__row__msg {
+    flex: 0.8;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    font-size: 14px;
+    min-width: 0;
+}
+
+.mail__row__msg > h4 {
+    width:fit-content;
+    color: whitesmoke;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.mail__row__description {
+    font-weight: bold;
+    color: rgba(255,255,255,.7);
+}
+
+.mail__row__time {
+    margin-left: auto;
+    width:fit-content;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}

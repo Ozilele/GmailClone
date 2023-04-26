@@ -1,0 +1,70 @@
+
+.sidebar__option {
+    margin-left: 0;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    height: 34px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    color: lightgray;
+    padding: 0 12px 0 16px;
+}
+
+.sidebar__option__rolled {
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    height: 30px; 
+    color: lightgray;
+    padding: 16px 5px;
+}
+
+.sidebar__option__rolled > svg {
+    height: 23px !important;
+}
+
+.sidebar__option > svg {
+    height: 20px !important;
+}
+
+.sidebar__option > p {
+    display: none;
+    margin-left: auto;
+    font-weight: 300;
+}
+
+.sidebar__option > h4 {
+    flex: 1;
+    font-weight: 300;
+    font-size: 0.95rem;
+}
+
+.sidebar__option:hover, .sidebar__option__rolled:hover {
+    background-color: rgb(65, 65, 65);
+    color: white;
+}
+
+.sidebar__option:hover > p {
+    display: block;
+}
+
+.sidebar__option--active, 
+.sidebar__option--active > p,
+.sidebar__option--active > h3 {
+    background-color: #595959;
+    font-weight: 800 !important;
+    color: white;
+}
+
+.sidebar__option--active:hover {
+    background-color: #595959;
+}
+
+.sidebar__option--active > p {
+    display: inline;
+}
+

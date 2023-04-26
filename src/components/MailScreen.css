@@ -1,0 +1,144 @@
+
+.mail__screen {
+    position: relative;
+    flex: 1;
+    margin-left: 15px;
+    background-color: #2C2C2C;
+    border-radius: 12px;
+    overflow-y: scroll;
+}
+
+.mail__tools {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: lightgray !important;
+}
+
+.mail__link__back {
+    margin-right: 12px;
+}
+
+.back__icon__btn, .mail__delete__btn, .right__arrow__btn, .left__arrow__btn {
+    color: lightgray !important;
+    padding: 4px 4px;
+    height: 30px !important;
+    width: 30px !important;
+}
+
+.back__icon__btn > svg, .mail__delete__btn > svg, .right__arrow__btn > svg, .left__arrow__btn > svg {
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.back__icon__btn:hover, .mail__delete__btn:hover, .right__arrow__btn:hover, .left__arrow__btn:hover {
+    background-color: #919191 !important;
+}
+
+.first__mail__icons, .second__mail__icons, .third__mail__icons {
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+}
+
+.first__mail__icons > svg,
+.second__mail__icons > svg,
+.third__mail__icons > svg,
+.mail__slider > svg {
+    cursor: pointer;
+    height: 20px !important;
+    width: 20px !important;
+    color: lightgray !important;
+}
+
+.mail__slider {
+    display: flex;
+    align-items: center;
+}
+
+.mail__slider > p {
+    margin-right: 13px;
+}
+
+.mail__content {
+    background-color: #ffffff;
+    height: 100%;
+}
+
+.mail__header {
+    padding: 1.5rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.mail__header > h2 {
+    font-weight: 300;
+    font-family: "Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+
+.mail__header > h2 > span {
+    display: inline-flex;
+    flex-wrap: wrap;
+    vertical-align: bottom;
+    min-height: 28px;
+}
+
+.inbox__icon {
+    color: #FFB84C;
+    align-self: center;
+}
+
+.mail__msg {
+    padding: 0 18px;
+}
+
+.mail__msg__first {
+    /* padding: 0 1.7rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mail__msg__info {
+    display: flex;
+    align-items: center;
+}
+
+.mail__avatar__icon {
+    width: 32px !important;
+    height: 34px !important;
+    display: flex;
+    align-items: center;
+}
+
+.msg__info {
+    margin-left: 6px;
+}
+
+.msg__info > h3 {
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #5E5E5E;
+}
+
+.mail__msg__date {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    color: #5e5e5e;
+}
+
+.mail__msg__date > svg {
+    cursor: pointer;
+}
+
+.mail__msg__content {
+    padding: 12px 38px;
+}
+
+.mail__msg__content > p {
+    overflow-wrap: break-word;
+}
+
+

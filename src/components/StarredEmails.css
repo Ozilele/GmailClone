@@ -1,0 +1,38 @@
+.starred__section {
+    flex: 1;
+    color: white;
+    border-radius: 12px;
+    margin-left: 15px;
+    border-left: 1px solid rgb(44, 44, 44);
+    padding: 0;
+    background-color: rgb(17, 17, 17);
+}
+
+.btns__section {
+    padding: 13px;
+    display: flex;
+    gap: 10px;
+    width: 70%;
+    max-width: 700px;
+    min-width: 300px;
+}
+
+.btns__section > button {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    border-radius: 12px;
+    background-color: #2C2D2C;
+    color:aliceblue;
+    align-items: center;
+    /* background-color: #5f6368; */
+    justify-content: space-between;
+    border: none;
+    padding: 0.6rem 0.8rem;
+}
+
+.content__section {
+    height: 100%;
+    width: auto;
+    background-color: rgb(17, 17, 17);
+}
